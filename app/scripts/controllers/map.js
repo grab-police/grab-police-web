@@ -59,7 +59,10 @@ directive('myMap', function() {
     // show the map and place some markers
     initMap();
 
-    setMarker(map, new google.maps.LatLng(10.3112933, 123.8898549), 'Cebu', 'Just some content');
+    setMarker(map, new google.maps.LatLng(10.3112933, 123.8898549), 'Cebu', '<b>Cebu Police</b> <br/><br/>Call: +63 9384 398<br/>Message<br/>Send Report');
+    setMarker(map, new google.maps.LatLng(14.3112933, 90.98400), 'Fuente', '<b>Fuente Police</b> <br/><br/>Call: +63 9849 843<br/>Message<br/>Send Report');
+    setMarker(map, new google.maps.LatLng(16.3112933, 100.340), 'Lahug', '<b>Lahug Police</b> <br/><br/>Call: +63 1249 984<br/>Message<br/>Send Report');
+    setMarker(map, new google.maps.LatLng(8.3112933, 85.980), 'Colon', '<b>Colon Police</b> <br/><br/>Call: +63 9833 984<br/>Message<br/>Send Report');
   };
 
   return {

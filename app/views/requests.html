@@ -1,11 +1,29 @@
 <div ng-controller="RequestsCtrl">
   <div class="row">
     <div class="col-md-12">
-      <div ng-repeat="report in reports">
-        <h1>{{report.shortdesc}}</h1>
-        <h3>{{report.description}}</h3>
-        <span class="text-muted">{{report.area}}</span>
-      </div>
+      <table class="table table-responsive table-hover">
+        <thead>
+          <tr>
+            <td>Report</td>
+            <td>Details</td>
+            <td>Location</td>
+            <td>Date/Time</td>
+            <td>Action</td>
+          </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="report in reports" ng-if="report.shortdesc">
+          <td>{{report.shortdesc}}</td>
+          <td>{{report.description}}</td>
+          <td><span class="text-muted">{{report.area}}</span></td>
+          <td><span class="text-muted">{{report.created_at}}</span></td>
+          <td>
+            <button type="button" class="btn btn-success btn-sm">Accept</button>
+            <button type="button" class="btn btn-danger btn-sm">Reject</button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </div>
