@@ -1,0 +1,21 @@
+<div class="row">
+  <form ng-controller="ReportCtrl" ng-submit="submitForm()">
+    <div class="col-md-12">
+      <div class="form-group">
+        <label>Short Explanation</label>
+        <input type="text" class="form-control" name="form.shortdesc" ng-model="form.shortdesc" />
+      </div>
+      <div class="form-group">
+        <label>Description</label>
+        <input type="text" class="form-control" name="form.description" ng-model="form.description" />
+      </div>
+      <div class="form-group">
+        <label>Area</label>
+        <input type="text" class="form-control" name="form.area" ng-model="form.area" />
+      </div>
+      <div class="form-group">
+        <input type="submit" class="btn btn-primary" value="Send report" name="sendbtn" />
+      </div>
+    </div>
+  </form>
+</div>

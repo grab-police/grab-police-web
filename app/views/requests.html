@@ -1,0 +1,11 @@
+<div ng-controller="RequestsCtrl">
+  <div class="row">
+    <div class="col-md-12">
+      <div ng-repeat="report in reports">
+        <h1>{{report.shortdesc}}</h1>
+        <h3>{{report.description}}</h3>
+        <span class="text-muted">{{report.area}}</span>
+      </div>
+    </div>
+  </div>
+</div>
